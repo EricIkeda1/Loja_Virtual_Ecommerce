@@ -60,13 +60,10 @@ header nav ul li a:hover {
 }
 
 .hero {
+  position: relative; /* Para que o conteúdo dentro possa ser posicionado sobre o carrossel */
   padding: 5rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
-
 
 .hero-content {
   max-width: 800px;
@@ -105,6 +102,7 @@ header nav ul li a:hover {
 .hero .btn:hover {
   background-color: #e65c00;
 }
+
 
 /* Estilos para a seção Produtos */
 .products {
