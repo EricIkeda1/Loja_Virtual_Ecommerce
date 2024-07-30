@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { LojaComponent } from './loja/loja.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, LojaComponent],  
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']        
 })
 export class AppComponent {
-  title = 'Loja_Virtual_Ecommerce';
+  title = 'areatechbr';
 }

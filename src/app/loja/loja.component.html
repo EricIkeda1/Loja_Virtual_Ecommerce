@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>Loja Virtual Ecommerce</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/loja.component.css"> <!-- Link para o CSS do componente -->
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1>Loja Ecommerce</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#destaque">Destaque</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagem1.jpg" alt="Promoção 1"></div>
+            <div class="swiper-slide"><img src="imagem2.jpg" alt="Promoção 2"></div>
+            <div class="swiper-slide"><img src="imagem3.jpg" alt="Promoção 3"></div>
+          </div>
+          <!-- Adicione os controles do Swiper se necessário -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+  </main>
+
+  <section id="products" class="products">
+    <h2>Produtos</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="produto1.jpg" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p class="price">R$ 100,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="produto2.jpg" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p class="price">R$ 150,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="produto3.jpg" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p class="price">R$ 200,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="produto4.jpg" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p class="price">R$ 250,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="destaque" class="destaque">
+    <h2>Destaques</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="destaque1.jpg" alt="Destaque 1">
+        <h3>Destaque 1</h3>
+        <p class="price">R$ 300,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="destaque2.jpg" alt="Destaque 2">
+        <h3>Destaque 2</h3>
+        <p class="price">R$ 350,00</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <h2>Sobre a Loja</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="sobre.jpg" alt="Sobre a Loja">
+      </div>
+      <div class="about-text">
+        <p>Bem-vindo à nossa loja virtual! Oferecemos uma vasta gama de produtos de alta qualidade. Nossa missão é proporcionar uma experiência de compra incrível para todos os nossos clientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-buttons">
+    <a href="https://www.linkedin.com" class="social-button linkedin" target="_blank">LinkedIn</a>
+    <a href="https://www.github.com" class="social-button github" target="_blank">GitHub</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Loja Virtual Ecommerce. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+
+</body>
+</html>
