@@ -22,7 +22,7 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 5rem 0;
+  padding: 55px; /*altura do cabeçalho*/
 }
 
 header .container {
