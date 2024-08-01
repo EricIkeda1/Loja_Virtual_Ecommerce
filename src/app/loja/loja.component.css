@@ -103,6 +103,7 @@ header nav ul li a:hover {
   background-color: #e65c00;
 }
 
+
 /* Estilos para a seção Produtos */
 .products {
   padding: 3rem 0;
@@ -253,7 +254,9 @@ header nav ul li a:hover {
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #555;
-}
+} 
+
+
 
 /* Estilos para o rodapé */
 footer {
@@ -308,3 +311,4 @@ footer p {
 .social-button i {
   margin: 0;
 }
+
