@@ -103,7 +103,6 @@ header nav ul li a:hover {
   background-color: #e65c00;
 }
 
-
 /* Estilos para a seção Produtos */
 .products {
   padding: 3rem 0;
@@ -260,56 +259,38 @@ header nav ul li a:hover {
 footer {
   background-color: #333;
   color: #fff;
-  text-align: center;
-  padding: 50px 0;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 30px 0; /* Ajusta o padding para ser mais compacto */
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between; /* Espaça o texto e os botões sociais */
+  align-items: center;
 }
 
 footer p {
   margin: 0;
 }
 
-/* css do Swiper */
-.swiper-container {
-  width: 100%;
-  height: 500px; /* Aumentado para melhorar a visualização das imagens */
-  position: relative; /* Para garantir que o conteúdo interno seja posicionado em relação a este container */
-  overflow: hidden; /* Esconde qualquer conteúdo que saia do container */
-  border-radius: 10px; /* Adiciona bordas arredondadas ao carrossel */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao carrossel */
-}
-
-.swiper-wrapper {
-  display: flex;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra completamente a área do slide */
-  border-radius: 10px; /* Bordas arredondadas nas imagens */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de zoom */
-}
-
-.swiper-slide img:hover {
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
 /* css para os botões de redes sociais */
 .social-buttons {
   display: flex;
-  justify-content: center;
   gap: 1rem;
-  padding: 2rem 0;
 }
 
 .social-button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  border-radius: 50%;
+  font-size: 1.5rem;
   transition: background 0.3s, transform 0.3s;
+  background-color: #000; /* Cor padrão dos botões */
 }
 
 .social-button.linkedin {
@@ -317,9 +298,13 @@ footer p {
 }
 
 .social-button.github {
-  background-color: #333;
+  background-color: #000; /* Preto mais escuro para o GitHub */
 }
 
 .social-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+
+.social-button i {
+  margin: 0;
 }
