@@ -18,7 +18,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Estilos para o cabeçalho */
+/* CSS para o cabeçalho */
 header {
   background-color: #333;
   color: #fff;
@@ -133,7 +133,7 @@ header nav ul li a {
 }
 
 
-/* Estilos para o conteúdo principal */
+/* CSS para o conteúdo principal */
 .container {
   width: 80%;
   margin: auto;
@@ -180,7 +180,7 @@ header nav ul li a {
   background-color: #e65c00;
 }
 
-/* Estilos para a seção Produtos */
+/* CSS para a seção Produtos */
 .products {
   padding: 3rem 0;
   background-color: #fff;
@@ -249,7 +249,7 @@ header nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para a seção Produtos em Promoção */
+/* CSS para a seção Produtos em Promoção */
 .products.destaque {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Gradiente sutil de fundo */
   border-radius: 12px; /* Bordas arredondadas elegantes */
@@ -297,7 +297,7 @@ header nav ul li a {
   background-color: #0056b3; /* Cor mais escura ao passar o mouse */
 }
 
-/* Estilos para a seção Sobre */
+/* CSS para a seção Sobre */
 .about {
   padding: 3rem 0;
   background-color: #fff;
@@ -335,7 +335,7 @@ header nav ul li a {
   font-size: 1.2rem;
 }
 
-/* Estilos para o rodapé */
+/* CSS para o rodapé */
 footer {
   background-color: #333;
   color: #fff;
