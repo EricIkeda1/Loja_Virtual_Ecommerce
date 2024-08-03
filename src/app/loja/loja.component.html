@@ -1,27 +1,37 @@
 <!doctype html>
 <html lang="pt">
-<head>
-  <meta charset="utf-8">
-  <title>Loja Virtual Ecommerce</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="loja.component.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Loja Virtual Ecommerce</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="loja.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
 <body>
   <header>
     <div class="container">
       <h1>Loja Ecommerce</h1>
       <nav>
-        <ul>
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <ul class="desktop-menu">
           <li><a href="#">Home</a></li>
           <li><a href="#products">Produtos</a></li>
           <li><a href="#">Carrinho</a></li>
           <li><a href="#">Conta</a></li>
           <li><a href="#sobre">Sobre</a></li>
         </ul>
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#">Carrinho</a></li>
+            <li><a href="#">Conta</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -156,6 +166,19 @@
         delay: 5000,
         disableOnInteraction: false,
       },
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      menuToggle.addEventListener('click', function() {
+        if (mobileMenu.style.display === 'block' || mobileMenu.style.display === '') {
+          mobileMenu.style.display = 'none';
+        } else {
+          mobileMenu.style.display = 'block';
+        }
+      });
     });
   </script>
 </body>
