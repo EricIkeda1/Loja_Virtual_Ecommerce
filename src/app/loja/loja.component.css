@@ -18,7 +18,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* CSS para o cabeçalho */
+/* Estilos para o cabeçalho */
 header {
   background-color: #333;
   color: #fff;
@@ -49,91 +49,11 @@ header nav ul li a {
   transition: background 0.3s;
 }
 
-.desktop-menu {
-  display: flex;
-  list-style-type: none;
+header nav ul li a:hover {
+  background-color: #555;
 }
 
-.desktop-menu li {
-  margin-right: 20px;
-}
-
-.desktop-menu a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu-toggle {
-  display: none; /* Esconde o botão em telas grandes */
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.menu-close {
-  display: none; /* Esconde o botão de fechar em telas grandes */
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-/* Menu móvel */
-.mobile-menu {
-  display: none; /* Inicialmente escondido */
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #333;
-  width: 100%;
-  max-width: 300px;
-  z-index: 1000; /* Garante que o menu apareça sobre outros conteúdos */
-}
-
-.mobile-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mobile-menu li {
-  margin: 10px 0;
-}
-
-.mobile-menu a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-.mobile-menu a:hover {
-  background-color: #575757;
-}
-
-/* Exibe o botão de menu e o botão de fechar apenas em dispositivos móveis */
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .mobile-menu .menu-close {
-    display: block;
-  }
-}
-
-
-/* CSS para o conteúdo principal */
+/* Estilos para o conteúdo principal */
 .container {
   width: 80%;
   margin: auto;
@@ -180,7 +100,7 @@ header nav ul li a {
   background-color: #e65c00;
 }
 
-/* CSS para a seção Produtos */
+/* Estilos para a seção Produtos */
 .products {
   padding: 3rem 0;
   background-color: #fff;
@@ -249,7 +169,7 @@ header nav ul li a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* CSS para a seção Produtos em Promoção */
+/* Estilos para a seção Produtos em Promoção */
 .products.destaque {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Gradiente sutil de fundo */
   border-radius: 12px; /* Bordas arredondadas elegantes */
@@ -297,7 +217,7 @@ header nav ul li a {
   background-color: #0056b3; /* Cor mais escura ao passar o mouse */
 }
 
-/* CSS para a seção Sobre */
+/* Estilos para a seção Sobre */
 .about {
   padding: 3rem 0;
   background-color: #fff;
@@ -335,7 +255,7 @@ header nav ul li a {
   font-size: 1.2rem;
 }
 
-/* CSS para o rodapé */
+/* Estilos para o rodapé */
 footer {
   background-color: #333;
   color: #fff;
